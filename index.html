@@ -8,22 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Estilos CSS base */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
     <script>
-        // Configuración de Tailwind CSS para extender el tema por defecto.
-        // Esto debe estar en una etiqueta <script>, no <style>.
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'oviedo-red': '#c8102e',    /* Rojo corporativo de Oviedo */
-                        'oviedo-gray': '#37474f',   /* Gris oscuro para texto */
-                        'oviedo-light-gray': '#f8f9fa', /* Fondo aún más claro */
+                        'oviedo-red': '#c8102e',
+                        'oviedo-gray': '#37474f',
+                        'oviedo-light-gray': '#f8f9fa',
                     }
                 }
             }
@@ -50,24 +42,43 @@
                 <p class="text-slate-700 leading-relaxed">Mi propuesta no busca reemplazar esa necesidad, sino complementarla. Les ofrezco un modelo de <strong class="font-semibold text-oviedo-gray">doble especialización</strong>: mientras su talento local se enfoca en crear, yo me encargo, de forma remota y como socio freelance, de la "sala de máquinas" de la interacción y el análisis de datos.</p>
             </section>
 
-            <!-- Mi Aporte Estratégico con más detalle -->
+            <!-- NUEVA SECCIÓN: Metodología y Diagrama -->
             <section class="mb-12">
-                <h2 class="text-2xl font-bold text-white bg-oviedo-red mb-8 text-center py-2 px-4 rounded-md inline-block">Mi Propuesta de Valor: ¿Qué puedo hacer por ustedes?</h2>
-                <div class="space-y-8">
-                    <!-- Pilar 1: Interacción -->
-                    <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-oviedo-red">
-                        <h3 class="font-bold text-xl text-oviedo-gray mb-2">Gestión de la Comunidad de Clientes Oviedo</h3>
-                        <p class="text-slate-600 leading-relaxed">Me hago cargo de la comunicación de la marca Oviedo con su comunidad de clientes profesionales. Esto significa responder de manera experta y ágil a las consultas que los restaurantes, hoteles y minimarkets les hacen a ustedes en sus canales digitales, gestionar reclamos para convertirlos en experiencias positivas y construir activamente una comunidad que perciba a Oviedo como el socio más confiable.</p>
-                    </div>
-                    <!-- Pilar 2: Oportunidades -->
-                    <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-oviedo-red">
-                        <h3 class="font-bold text-xl text-oviedo-gray mb-2">Inteligencia Comercial y Captura de Leads</h3>
-                        <p class="text-slate-600 leading-relaxed">Mi rol es ser un puente entre marketing y ventas. Monitoreo activamente las conversaciones para detectar oportunidades de negocio (ej: un nuevo restaurante buscando proveedores) y canalizo estos leads calificados directamente a su equipo comercial, con toda la información necesaria para un contacto efectivo. Transformo la interacción en crecimiento medible.</p>
-                    </div>
-                    <!-- Pilar 3: Análisis -->
-                    <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-oviedo-red">
-                        <h3 class="font-bold text-xl text-oviedo-gray mb-2">Reportería Estratégica para la Toma de Decisiones</h3>
-                        <p class="text-slate-600 leading-relaxed">Utilizando herramientas como <a href="https://sproutsocial.com/" target="_blank" class="font-semibold text-oviedo-red hover:underline">Sprout Social</a>, voy más allá de las métricas básicas. Les entrego informes claros y visuales sobre el posicionamiento de la marca, el sentimiento de la comunidad, análisis de la competencia y el rendimiento de las campañas, proveyendo insights clave para que puedan tomar decisiones de negocio con confianza.</p>
+                <h2 class="text-2xl font-bold text-white bg-oviedo-red mb-8 text-center py-2 px-4 rounded-md inline-block">Mi Metodología: Ecosistema de Comunicación Centralizado</h2>
+                <p class="text-slate-700 leading-relaxed mb-8">Para aportar valor real de forma remota, es fundamental contar con un sistema de trabajo transparente y eficiente. Mi metodología se basa en centralizar todas las interacciones a través de una plataforma líder como <strong>Sprout Social</strong>, para luego canalizar la información de valor a los equipos correspondientes dentro de Oviedo.</p>
+                
+                <!-- Diagrama de Flujo -->
+                <div class="w-full bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <div class="flex flex-col md:flex-row justify-between items-center text-center">
+                        <!-- Entradas -->
+                        <div class="w-full md:w-1/4">
+                            <h3 class="font-bold text-oviedo-gray mb-2">CANALES DE ENTRADA</h3>
+                            <div class="space-y-2 text-sm">
+                                <p class="bg-white p-2 rounded border">LinkedIn</p>
+                                <p class="bg-white p-2 rounded border">WhatsApp Business</p>
+                                <p class="bg-white p-2 rounded border">Facebook / Instagram</p>
+                                <p class="bg-white p-2 rounded border">Email / Formularios</p>
+                            </div>
+                        </div>
+                        <!-- Flechas y Hub Central -->
+                        <div class="w-full md:w-1/2 flex items-center justify-center py-4 md:py-0">
+                            <svg class="w-8 h-8 text-slate-400 hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            <div class="mx-4 p-4 border-2 border-oviedo-red rounded-lg shadow-md bg-white">
+                                <img src="https://i.imgur.com/b3yH2pA.png" alt="Sprout Social Logo" class="h-8 mx-auto mb-2">
+                                <p class="font-bold text-oviedo-red">HUB CENTRAL</p>
+                                <p class="text-xs text-slate-500">Clasificación y Gestión</p>
+                            </div>
+                            <svg class="w-8 h-8 text-slate-400 hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                        <!-- Salidas -->
+                        <div class="w-full md:w-1/4">
+                             <h3 class="font-bold text-oviedo-gray mb-2">SALIDAS ESTRATÉGICAS</h3>
+                             <div class="space-y-2 text-sm">
+                                <p class="bg-white p-2 rounded border">Leads a <strong>Equipo de Ventas</strong> (Planilla/Dashboard)</p>
+                                <p class="bg-white p-2 rounded border">Consultas/Reclamos a <strong>Atención al Cliente</strong></p>
+                                <p class="bg-white p-2 rounded border">Insights a <strong>Equipo de Marketing</strong> (Reportes)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
